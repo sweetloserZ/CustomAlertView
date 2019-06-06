@@ -11,7 +11,13 @@
 
 
 NS_ASSUME_NONNULL_BEGIN
-
+typedef enum : NSUInteger {
+    CAViewAnimationTypeDown,
+    CAViewAnimationTypeUp,
+    CAViewAnimationTypeLeft,
+    CAViewAnimationTypeRight,
+    CAViewAnimationTypeCenter,
+} CAViewAnimationType;
 
 
 @class CAConfigurationTitleModel,CAConfigurationMsgModel,CAConfigurationButtonModel,CAButton,CAConfigurationModel;
@@ -23,10 +29,11 @@ typedef void(^CAActionBlock)(CAConfigurationModel *model);
 
 @property(assign,nonatomic)float CLWidth;
 @property(assign,nonatomic)float CLMaxHight;
+
+
 @property(assign,nonatomic)BOOL isNeedCAMaskView;
 
-@property(assign,nonatomic)NSUInteger btCount;
-
+@property(assign,nonatomic)CAViewAnimationType CAVAType;
 
 
 @property(strong,nonatomic)CAConfigurationTitleModel *titleModel;

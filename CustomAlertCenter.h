@@ -17,9 +17,6 @@ typedef void(^CABlock)(CAConfigurationModel *model);
 
 @interface CustomAlertCenter : NSObject
 
-//@property(nonatomic,strong)CAConfigurationModel *cAConfigModel;
-
-
 +(CustomAlertCenter *)shareCustomAlertCenter;
 
 -(void)showCustomAlertWithBlock:(CABlock)block;

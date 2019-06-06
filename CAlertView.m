@@ -23,7 +23,6 @@
 
 +(CAlertView *)CreateCAViewWithModel:(CAConfigurationModel *)model;
 {
-    
     CATitleLabel *tLabel = [CATitleLabel CreateCATitleLabelWithWidth:model.CLWidth WithTitle:model.titleModel.title FontSize:model.titleModel.titleFontSize BackgroundColor:model.titleModel.titleBackgroundColor TitleColor:model.titleModel.titleColor];
     
     CAMessageLabel *msgLabel = [CAMessageLabel CreateMessageLabelWithWidth:model.CLWidth Message:model.msgModel.msg MsgFontSize:model.msgModel.msgFontSize MsgBackgroundColor:model.msgModel.msgBackgroundColor MsgColor:model.msgModel.msgColor];
