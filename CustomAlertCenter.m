@@ -78,7 +78,9 @@
             break;
         case CAViewAnimationTypeCenter:
         {
-            
+            moveAnimation  = [CABasicAnimation animationWithKeyPath:@"bounds"];
+            moveAnimation.fromValue = [NSValue valueWithCGRect:CGRectMake(0, 0, 1, 1)];
+            moveAnimation.toValue = [NSValue valueWithCGRect:CAView.bounds];
         }
             break;
         default:
